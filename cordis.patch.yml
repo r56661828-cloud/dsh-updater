@@ -1,0 +1,6 @@
+# dsh-updater：版本检查 + 引导式升级 + 升级后自检
+# 设计文档：~/dsh-explore/dsh-updater-plugin-design.md（方案 X：运行中安装，确认后重启；只盯 latest）
+- insert:
+    - id: dsh-updater
+      name: '@you-renjun/dsh-updater'
+      config: {}

@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "title": "dsh Updater",
+    "description": "Checks for new @deepseek-ai/dsh releases and runs the guided upgrade, restart, and post-upgrade self-check flow."
+  },
+  "title": "dsh Update",
+  "btn": {
+    "upgrade": "Update",
+    "start": "Start upgrade",
+    "restart": "Restart now",
+    "close": "Close",
+    "recheck": "Re-check"
+  },
+  "chip.tooltip": "New version {latest} available (current {current}). Click to upgrade",
+  "modal.subtitle": "Current {current} → Target {target}",
+  "step.running": "Running…",
+  "phase.idle": "Not started",
+  "phase.running": "Upgrading…",
+  "phase.awaiting-restart": "Installed. Awaiting restart confirmation",
+  "phase.restarting": "Restart issued, waiting for the service to come back…",
+  "phase.selfcheck": "Post-upgrade self-check running…",
+  "phase.done": "Upgrade complete ✓",
+  "phase.done-with-warnings": "Upgrade complete with warnings ⚠",
+  "phase.failed": "Upgrade failed and was aborted",
+  "banner.netdown": "Disconnected from the service, reconnecting…",
+  "banner.restartNote": "Restarting interrupts all active sessions; this page recovers automatically.",
+  "manual.title": "Manual confirmation items",
+  "manual.gui": "GUI smoke: Settings → open config file, font size/theme/model list render fine",
+  "manual.session": "Open a new session and verify tool delivery (workflow/present etc.)",
+  "error.start": "Failed to start upgrade: {error}",
+  "error.check": "Check failed: {error}",
+  "error.restarts": "Restart command failed: {error}",
+  "selfcheck.notice": "The following self-check items run automatically after the service recovers:",
+  "ok": "OK"
+}

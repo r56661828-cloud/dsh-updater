@@ -1,0 +1,65 @@
+{
+  "name": "@you-renjun/dsh-updater",
+  "version": "1.3.1",
+  "type": "module",
+  "description": "In-app updater for DeepSeek Harness: checks the latest release, walks you through install and restart, then re-runs a self-check so a broken upgrade is visible before you keep working.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "scripts": {
+    "build": "esbuild src/entry.js --bundle --format=iife --external:react --minify-whitespace --outfile=client.js",
+    "test": "vitest run",
+    "verify": "npm run build && npm run test"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^14.3.1",
+    "esbuild": "^0.25.0",
+    "jsdom": "^26.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "vitest": "^3.2.4"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "assets/upgrade.mjs",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "updater",
+    "upgrade",
+    "self-check"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitee.com/you-renjun/dsh-updater.git"
+  },
+  "homepage": "https://gitee.com/you-renjun/dsh-updater",
+  "bugs": {
+    "url": "https://gitee.com/you-renjun/dsh-updater/issues"
+  },
+  "engines": {
+    "dsh": ">=0.2.2-rc.1"
+  }
+}

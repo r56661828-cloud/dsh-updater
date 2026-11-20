@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "title": "dsh 版本更新",
+    "description": "检查 @deepseek-ai/dsh 新版本，并以向导式步骤执行升级、重启与升级后自检。"
+  },
+  "title": "dsh 版本更新",
+  "btn": {
+    "upgrade": "更新",
+    "start": "开始升级",
+    "restart": "立即重启",
+    "close": "关闭",
+    "recheck": "重新检查"
+  },
+  "chip.tooltip": "发现新版本 {latest}（当前 {current}），点击升级",
+  "modal.subtitle": "当前 {current} → 目标 {target}",
+  "step.running": "执行中…",
+  "phase.idle": "尚未开始",
+  "phase.running": "升级执行中…",
+  "phase.awaiting-restart": "安装完成，等待重启确认",
+  "phase.restarting": "重启指令已发出，服务恢复中…",
+  "phase.selfcheck": "升级后自检执行中…",
+  "phase.done": "升级完成 ✓",
+  "phase.done-with-warnings": "升级完成，但有警告 ⚠",
+  "phase.failed": "升级失败，已中止",
+  "banner.netdown": "与服务断开，自动重连中…",
+  "banner.restartNote": "重启将中断所有活动会话，页面会自动恢复。",
+  "manual.title": "需人工确认项",
+  "manual.gui": "GUI 冒烟：设置→打开配置文件、字号/主题/模型列表正常",
+  "manual.session": "新开一个会话，核对工具下发正常（workflow/present 等）",
+  "error.start": "启动升级失败：{error}",
+  "error.check": "检查失败：{error}",
+  "error.restarts": "重启指令失败：{error}",
+  "selfcheck.notice": "以下自检项由服务恢复后自动执行：",
+  "ok": "正常"
+}
